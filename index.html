@@ -77,18 +77,17 @@
           </div>
           <div class="modal-footer">
              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-             <button type="button" class="btn btn-primary" onclick="proses()">Save changes</button>
+             <button type="button" class="btn btn-primary" onclick="">Save changes</button>
           </div>
        </div>
     </div>
  </div>
- 
 
 </body>
 </html>
 
 <script>
-  const tHeadDatas = ['Nama Mahasiswa', 'Nama Matakuliah', 'Nilai', 'Keterangan Lulus']
+  const tHeadDatas = ['Nama Mahasiswa', 'Nama Matakuliah', 'Nilai', 'Keterangan Lulus', 'Actions']
   const tHeadRow = document.getElementById('thRow');
       for (let tHeadData of tHeadDatas) {
         const th = document.createElement('th');

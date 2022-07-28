@@ -10,16 +10,18 @@ function loadTable(data) {
         { data : "nilai" },
         { data : "ket_lulus" },
       ],
+      "columnDefs": [{"render": createDeleteBtn, "data": null, "targets": [4]}],
     })
-
-    $('#scoreTable tbody').on('click', 'button', function () {
-      var data = table.row($(this).parents('tr')).data();
-      alert(data[0] + "'s salary is: " + data[5]);
-  });
-
   })
 }
 
+function createDeleteBtn() {
+  return '<button id="deleteBtn" type="button" onclick="myFunc()" class="btn btn-danger btn-xs">Delete</button>';
+}
+
+function myFunc() {
+  console.log("Button was clicked!!!");
+}
 
 
 const getTableData = async () => {
